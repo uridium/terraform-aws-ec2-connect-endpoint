@@ -1,0 +1,10 @@
+style: github
+template: CHANGELOG.tpl.md
+info:
+  title: CHANGELOG
+  repository_url: https://github.com/uridium/terraform-aws-ec2-connect-endpoint
+options:
+  header:
+    pattern: "^((\\w+)\\s.*)$"
+    pattern_maps:
+      - Subject
