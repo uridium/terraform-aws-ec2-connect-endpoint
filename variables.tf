@@ -6,7 +6,6 @@ variable "subnet_id" {
 variable "security_group_ids" {
   description = "One or more security groups to associate with the endpoint"
   type        = list(string)
-  default     = null
 }
 
 variable "preserve_client_ip" {
@@ -15,8 +14,7 @@ variable "preserve_client_ip" {
   default     = true
 }
 
-variable "tags" {
-  description = "Map of tags to assign to this resource"
-  type        = map(string)
-  default     = null
+variable "name" {
+  description = "Name to be used as a tag"
+  type        = string
 }
