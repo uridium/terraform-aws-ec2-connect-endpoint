@@ -1,5 +1,9 @@
 # Terraform AWS EC2 Instance Connect Endpoint module
 
+[![GitHub Actions](https://github.com/uridium/terraform-aws-ec2-connect-endpoint/workflows/Lint/badge.svg)](https://github.com/uridium/terraform-aws-ec2-connect-endpoint/actions/workflows/lint.yml)
+[![GitHub Actions](https://github.com/uridium/terraform-aws-ec2-connect-endpoint/workflows/Release/badge.svg)](https://github.com/uridium/terraform-aws-ec2-connect-endpoint/actions/workflows/release.yml)
+[![Latest tag](https://img.shields.io/github/v/tag/uridium/terraform-aws-ec2-connect-endpoint)](https://registry.terraform.io/modules/uridium/ec2-connect-endpoint/aws)
+
 Terraform AWS module which manages an EC2 Instance Connect Endpoint.
 
 EC2 Instance Connect Endpoint allows you to connect to an instance without requiring the instance to have a public IPv4 address. You can connect to any instances that support TCP.
