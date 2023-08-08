@@ -60,6 +60,16 @@ pre-commit run -av
 | <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0 |
 | <a name="requirement_tls"></a> [tls](#requirement\_tls) | >= 4.0 |
 
+## Providers
+
+| Name | Version |
+|------|---------|
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.11.0 |
+
+## Modules
+
+No modules.
+
 ## Resources
 
 | Name | Type |
@@ -79,10 +89,9 @@ pre-commit run -av
 
 | Name | Description |
 |------|-------------|
-| <a name="output_availability_zone"></a> [availability\_zone](#output\_availability\_zone) | n/a |
-| <a name="output_id"></a> [id](#output\_id) | n/a |
-| <a name="output_network_interface_ids"></a> [network\_interface\_ids](#output\_network\_interface\_ids) | n/a |
-| <a name="output_security_group_ids"></a> [security\_group\_ids](#output\_security\_group\_ids) | n/a |
-| <a name="output_subnet_id"></a> [subnet\_id](#output\_subnet\_id) | n/a |
-| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | n/a |
+| <a name="output_availability_zone"></a> [availability\_zone](#output\_availability\_zone) | The availability zone of the endpoint |
+| <a name="output_id"></a> [id](#output\_id) | The ID of the EC2 Connect Endpoint |
+| <a name="output_security_group_ids"></a> [security\_group\_ids](#output\_security\_group\_ids) | One or more security groups associated with the endpoint |
+| <a name="output_subnet_id"></a> [subnet\_id](#output\_subnet\_id) | The ID of the endpoint subnet |
+| <a name="output_vpc_id"></a> [vpc\_id](#output\_vpc\_id) | The VPC ID in which the endpoint is created |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
