@@ -34,18 +34,30 @@ module "ec2-connect-endpoint" {
 
 For more information click [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-linux-inst-eic-Endpoint.html)
 
+### Examples
+
+* [Simple: VPC, SG, EC2, EC2 Connect Endpoint](https://github.com/uridium/terraform-aws-ec2-connect-endpoint/tree/master/examples/simple)
+* [Advanced: VPC Peering, SG, EC2, EC2 Connect Endpoint](https://github.com/uridium/terraform-aws-ec2-connect-endpoint/tree/master/examples/multi-region-vpc-peering)
+
 ## Development
 
 This module uses [pre-commit](https://pre-commit.com/) hook to identify simple issues before pushing code to the remote repository, and to generate documentation.
 
-To install it, simply run:
+Install `pre-commit`:
 
 ```bash
 pip install pre-commit
+```
+
+Install the git hook scripts:
+
+```bash
 pre-commit install
 ```
 
-Now `pre-commit` will run automatically on every `git commit`. You can also run it manually:
+Now `pre-commit` will run automatically on every `git commit`.
+
+It's usually a good idea to run the hooks against all of the files when adding new hooks (usually `pre-commit` will only run on the changed files during git hooks):
 
 ```bash
 pre-commit run -av

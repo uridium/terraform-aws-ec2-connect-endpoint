@@ -1,6 +1,6 @@
 # Terraform AWS EC2 Instance Connect Endpoint use case
 
-This is a more advanced example, which shows not only how to use EC2 Instance Connect Endpoint, but also sets up a multi-region (US-EU) VPC peering:
+This is a more advanced example, which shows not only how to use EC2 Instance Connect Endpoint, but also how to set up a multi-region VPC peering:
 
 * [vpc module](https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws/latest)
 * [security-group module](https://registry.terraform.io/modules/terraform-aws-modules/security-group/aws/latest)
@@ -15,7 +15,7 @@ terraform init
 terraform apply
 ```
 
-As the outputs you can, among others, get an aws cli commands to connect to your EC2 instances, for example:
+As the outputs, you get among others an aws cli commands to connect to your EC2 instances, for example:
 
 ```bash
 ...
@@ -47,8 +47,8 @@ vpc_eu_instances = {
 }
 ```
 
-EC2 instances are set up in both VPCs, in public and private subnets. They have no public IP addresses, and none of them can connect to the internet (there's no NAT gateway).
+EC2 instances are set up in both VPCs, in public and private subnets. They have no public IP addresses, and none of them can connect to services outside your VPC (there's no NAT gateway).
 
 To test out _EC2 Instance Connect Endpoint_ service, simply log in to any of those instances using a cmd command from the output.
 
-To test out _VPC Peering_, simply ping instances in the EU VPC from the US VPC, and the other way around.
+To test out _VPC Peering_, simply ping instances in one VPC from another.
